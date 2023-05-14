@@ -1,63 +1,257 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-     <title>Juego de preguntas</title>
-     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
 
-     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.3.0/dist/sweetalert2.all.min.js"></script>
-     <link rel="stylesheet" href="index.css">
-     <script src="base-de.preguntas.js"></script>
-     <script defer src="index.js"></script>
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- swiper css link  -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- cusom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
-
 <body>
-     <a href="mapa.html"><button  style="color: rgb(0, 0, 0); " href=""> <button style="background-color: white;width: 90px;font-family: Comic Sans; border: 0;font-size: 25px; height: 60px;border-radius: 20px; -webkit-box-shadow: 12px 29px 81px 0px rgba(0,0,0,0.75);-moz-box-shadow: 12px 29px 81px 0px rgba(0,0,0,0.75);box-shadow: 12px 29px 81px 0px rgba(0,0,0,0.75); "> Salir</button></a>
-     <br>
-     <br><br><br><br><br><br>
-    <center>
-     <div id="tablero-de-juego">
+<!-- header section starts  -->
 
-          <div id="encabezado">
+<header class="header">
 
-               <a id="ayuda" class="btn btn-info" onclick="ayuda()">
-                    Ayuda
-               </a>
+    
 
-               <br>
+    <div class="icons">
 
-               <span id="pregunta">Aquí va la pregunta</span>
-               <br>
+        <div style=" display: none;" id="menu-btn" class="fas fa-bars"></div>
+        <div style=" display: none;" id="search-btn" class="fas fa-search"></div>
+    </div>
+    <iframe height="650px" width="100%" src="Buscador.html" frameborder="0"></iframe>
+</header>
 
-               <img id="imagen" src="https://i.ibb.co/kh4FD6Z/img.png" style="width: 90%;height: 200px;object-fit: contain;">
-          </div>
+<!-- header section ends -->
 
-          <div class="opcion" id="opcion-1" onclick="seleccionarOpción(0)">
-               Opción 1
-          </div>
-          <div class="opcion" id="opcion-2" onclick="seleccionarOpción(1)">
-               Opción 2
-          </div>
-          <div class="opcion" id="opcion-3" onclick="seleccionarOpción(2)">
-               Opción 3
-          </div>
-          <div class="opcion" id="opcion-4" onclick="seleccionarOpción(3)">
-               Opción 4
-          </div>
+<!-- side-bar section starts -->
 
-     </div>
-</center>
+<div class="side-bar">
 
-<img src="https://tikz.net/files/coulomb_force-005.png" style="width: 430px;" alt=""> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <div id="close-side-bar" class="fas fa-times"></div>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;     <img src="ley_cou_03-removebg-preview.png" style="width: 430px; object-position: left;" alt="">
+    <div class="user">
+        <img src="images/user-img.png" alt="">
+        <br>
+        <h3>shaikh anas</h3>
+        <a href="#">log out</a>
+    </div>
+
+</div>
+
+<!-- side-bar section ends -->
+
+<!-- home section starts  -->
+
+<section class="home">
+<h1 style="font-size: 30px; font-family: 'Nerko One', cursive; margin: 30px;">Fruta de Temporada</h1>
+    <div class="swiper home-slider">
+
+        <div class="swiper-wrapper">
+
+        <div class="swiper-slide slide">
+            <div class="image">
+                <img src="images/home-img-1.jpg" alt="">
+            </div>
+            <div class="content">
+                <span>150$-1kg</span>
+                <h3>Jitomate</h3>
+                <a href="#" class="btn">Pedir</a>
+            </div>
+        </div>
+
+        <div class="swiper-slide slide">
+            <div class="image">
+                <img src="images/home-img-2.jpg" alt="">
+            </div>
+            <div class="content">
+                <span>150$-1kg</span>
+                <h3>Manzana</h3>
+                <a href="#" class="btn">Pedir</a>
+            </div>
+        </div>
+
+        <div class="swiper-slide slide">
+            <div class="image">
+                <img src="images/home-img-3.jpg" alt="">
+            </div>
+            <div class="content">
+                <span>150$-1kg</span>
+                <h3>Tomate verde</h3>
+                <a href="#" class="btn">Pedir</a>
+            </div>
+        </div>
+
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+    </div>
+
+</section>
+
+
+<h1  style="font-size: 30px; font-family: 'Nerko One', cursive; margin: 30px;">Fruta de Temporada</h1>
+<section  style="margin-left: 0px;  flex-wrap: wrap; display: flex;">
+    <center><a href="Fruta.html"  style="color: #0984e3; ">
+        <div class="clases" style="display: flex;">
+            <div style="  
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); margin: 20px; background-color: rgb(242, 220, 255);width: 110px; height: 110px; border-radius: 10px; margin-left: 5px; margin-right: 15px;align-content: center;">
+                <img style="width: 90px; height: 90px; border-radius: 10px;" src="images/fruta.png" alt="">
+                <br>
+                <br>
+                <br>
+                <h1 style="font-size: 20px;">Frutas </h1> </a></center>
+                
+        </div><center><a href="Verdura.html"  style="color: #0984e3; ">
+        <div style="  
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); margin: 20px; background-color: rgb(13, 201, 97);width: 110px; height: 110px; border-radius: 10px; margin-left: 5px; margin-right: 15px; ">
+            <img style="width: 90px; height: 90px; border-radius: 10px;" src="images/verduras.png" alt="">
+            <br>
+            <br>
+            <br>
+            <h1 style="font-size: 20px;">Verduras</h1> </a></center>
+        </div><center><a href="Abarrotes.htm"  style="color: #0984e3; ">
+        <div style="  
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); margin: 20px; background-color: darksalmon;width: 110px; height: 110px; border-radius: 10px; margin-left: 5px; margin-right: 15px;">
+            <img style="width: 90px; height: 90px; border-radius: 10px;" src="images/carrito-de-supermercado.png" alt="">
+            <br>
+            <br>
+            <br>
+            
+            <h1 style="font-size: 20px;">Abarrotes </h1> </a></center>
+        </div><center><a href=""  style="color: #0984e3; ">
+        <div style="  
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); margin: 20px; background-color: rgb(194, 255, 245);width: 110px; height: 110px; border-radius: 10px; margin-left: 5px; margin-right: 15px;">
+            <img style="width: 90px; height: 90px; border-radius: 10px;" src="images/productos-lacteos.png" alt="">
+            <br>
+            <br>
+            <br>
+            <h1 style="font-size: 20px;">Frutos Secos</h1></a></center>
+        </div><center><a href=""  style="color: #0984e3; ">
+        <div style="  
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); margin: 20px; background-color: rgb(155, 78, 255);width: 110px; height: 110px; border-radius: 10px; margin-left: 5px; margin-right: 15px;">
+            <img style="width: 90px; height: 90px; border-radius: 10px;" src="images/refresco.png" alt="">
+            <br>
+            <br>
+            <br>
+            <h1 style="font-size: 20px;">Pescados</h1></a></center>
+        </div><center><a href=""  style="color: #0984e3; ">
+        <div style="  
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); margin: 20px; background-color: rgb(255, 128, 128);width: 110px; height: 110px; border-radius: 10px; margin-left: 5px; margin-right: 15px;">
+            <img style="width: 90px; height: 90px; border-radius: 10px;" src="images/pollo-asado.png" alt="">
+            <br>
+            <br>
+            <br>
+            <h1 style="font-size: 20px;">Pollos</h1></a></center>
+
+    </div>
+</section >
+
+<!-- banner section starts  -->
+
+<h1 style="font-size: 30px; font-family: 'Nerko One', cursive; margin: 30px;">Descuentos y ofertas</h1>
+<section class="banner">
+
+    <div class="box-container">
+
+        <a href="#" class="box" style="border-radius: 25px;">
+            <img src="images/banner-1.jpg" alt="">
+            <div class="content">
+                <span>oferta especial</span>
+                <h3>50% porciento<br> de descuento</h3>
+            </div>
+        </a>
+
+        <a href="#" class="box" style="border-radius: 25px;">
+            <img src="images/banner-2.jpg" alt="">
+            <div class="content">
+                <span>oferta especial</span>
+                <h3>50% porciento<br> de descuento</h3>
+            </div>
+        </a>
+
+        <a href="#" class="box" style="border-radius: 25px;">
+            <img src="images/banner-3.jpg" alt="">
+            <div class="content">
+                <span>oferta especial</span>
+                <h3>50% porciento<br> de descuento</h3>
+            </div>
+        </a>
+
+        <a href="#" class="box" style="border-radius: 25px;">
+            <img src="images/banner-1.jpg" alt="">
+            <div class="content">
+                <span>oferta especial</span>
+                <h3>50% porciento<br> de descuento</h3>
+            </div>
+        </a>
+
+        <a href="#" class="box" style="border-radius: 25px;">
+            <img src="images/banner-2.jpg" alt="">
+            <div class="content">
+                <span>oferta especial</span>
+                <h3>50% porciento<br> de descuento</h3>
+            </div>
+        </a>
+
+        <a href="#" class="box" style="border-radius: 25px;">
+            <img src="images/banner-3.jpg" alt="">
+            <div class="content">
+                <span>oferta especial</span>
+                <h3>50% porciento<br> de descuento</h3>
+            </div>
+        </a>
+        <a href="#" class="box" style="border-radius: 25px;">
+            <img src="images/banner-2.jpg" alt="">
+            <div class="content">
+                <span>oferta especial</span>
+                <h3>50% porciento<br> de descuento</h3>
+            </div>
+        </a>
+
+        <a href="#" class="box" style="border-radius: 25px;">
+            <img src="images/banner-3.jpg" alt="">
+            <div class="content">
+                <span>oferta especial</span>
+                <h3>50% porciento<br> de descuento</h3>
+            </div>
+        </a>
+        
+    </div>
+</section>
+
+
+
+<!-- banner section ends -->
+
+
+<!-- footer section ends -->
+
+
+
+
+<!-- swiper js link      -->
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
 </body>
-
 </html>

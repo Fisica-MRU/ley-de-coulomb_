@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Aprendoo</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/Logo.png">
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/principal1.css">
+
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+</head>
+<body>
+
+    <!--Header - menu-->
+    <header>
+
+        <div class="header-content">
+
+            <div class="logo">
+                <h1 id="h1"><i><b>Fruteria Ana Maria</b></i></h1>
+                
+                <h1 id="h12"><i><b>Fruteria Ana Maria</b></i></h1>
+            </div>
+
+            <div class="menu" id="show-menu">
+
+                <nav>
+                    <ul>
+                        
+                        <li><a class="active" href="Temas.html">inicio y Productos</a></li>
+                        <li><a  href="Temas.html">historia</a></li>
+                        <li><a href="Nosotros.html" target="_blank">Nosotros</a></li>
+                        <li><a href="contactanos.html" id="O">Cupones</a></li> 
+
+             </ul>
+             </nav>
+            </div>
+
+                           
+                <div id="ctn-icon-search">
+                <i class="fas fa-search" id="icon-search"></i>
+            </div>
+
+        </div>
+
+        <div id="icon-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+
+    </header>
+
+
+    <div id="ctn-bars-search">
+        <input type="text" id="inputSearch" placeholder="Buscar..">
+    </div>
+
+    <ul id="box-search">
+        <li><a href=""><i class="fas fa-search"></i>Guerra Fria----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------Solicitar Precio</a></li>
+        <li><a href="articulo.html"><i class="fas fa-search"></i>1° Guerra Mundial</a></li>
+        <li><a href="articulo.html"><i class="fas fa-search"></i>JavaScript</a></li>
+        <li><a href="articulo.html"><i class="fas fa-search"></i>PHP</a></li>
+        <li><a href="articulo.html"><i class="fas fa-search"></i>NODEJS</a></li>
+        <li><a href="articulo.html"><i class="fas fa-search"></i>VUEJS</a></li>
+        <li><a href="articulo.html"><i class="fas fa-search"></i>Como hacer</a></li>
+        <li><a href="articulo.html"><i class="fas fa-search"></i>Como crear</a></li>
+    </ul>
+
+    <div id="cover-ctn-search"></div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+  <center>   
+
+
+
+   <h1 style="font-size: 40px; "><b><i>Bienvenido a nuestro catalogo virtual</i></b></h1>
+    <img src="flecha-hacia-abajo.png" style="width: 100px; height: 100px;" alt="">        <img id="im" src="flecha-hacia-abajo.png" style="width: 100px; height: 100px;" alt="">
+    <br><br><br>
+    <img id="im" src="images/image-removebg-preview.png" width="250px">
+    <script src="js/script1.js"></script>
+    <br><br><br>    
+    <img src="images/image-removebg-preview.png" width="300px">
+
+
+
+</center>
+    <script>
+		let sideBar = document.querySelector('.side-bar');
+
+document.querySelector('#menu-btn').onclick = () =>{
+    sideBar.classList.toggle('active');
+}
+
+document.querySelector('#close-side-bar').onclick = () =>{
+    sideBar.classList.remove('active');
+}
+
+let searchForm = document.querySelector('.search-form');
+
+document.querySelector('#search-btn').onclick = () =>{
+    searchForm.classList.toggle('active');
+}
+
+window.onscroll = () =>{
+    sideBar.classList.remove('active');
+    searchForm.classList.remove('active');
+};
+
+document.querySelectorAll('.accordion-container .accordion').forEach(accordion =>{
+    accordion.onclick = () =>{
+        accordion.classList.toggle('active');
+    }
+});
+
+var swiper = new Swiper(".home-slider", {
+    loop:true,
+    grabCursor:true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+});
+
+var swiper = new Swiper(".review-slider", {
+    loop:true,
+    grabCursor:true,
+    spaceBetween: 20,
+    breakpoints: {
+        450: {
+          slidesPerView: 1,
+        },
+        768: {
+          slidesPerView: 2,
+        },
+        1024: {
+          slidesPerView: 3,
+        },
+    },
+});
+	</script>
+
+</body>
+</html>

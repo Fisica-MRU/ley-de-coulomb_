@@ -1,0 +1,119 @@
+body {
+    margin: 0px;
+    background-color: aliceblue;
+    font-family: 'Nerko One', cursive;
+}
+
+
+html::-webkit-scrollbar {
+  width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: #eee;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #0984e3;;
+  border-radius: 0rem;
+}
+button {
+    font-size: 16px;
+    text-align: center;
+    border-radius: 8px;
+    padding: 10px 20px;
+    width: 90%;
+}
+.page-nav {
+    background-color: #ceb4b4;
+    border: 1px solid black;
+    position: relative;
+}
+
+.page-nav h1 {
+    margin: 40px;
+}
+.contenedor{
+    display: flex;
+    height: 120px;
+}
+.button-checkout {
+    background-color: white;
+    color: black;
+    border: 2px solid #008CBA; /* Blue */
+    transition-duration: 0.4s;
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+}
+
+.button-checkout:hover {
+    background-color: #008CBA; /* Blue */
+    color: white;
+}
+
+.page-content {
+  display: flex;
+    flex-wrap: wrap;
+}
+
+.page-content2 {
+    display: flex;
+    justify-content: left;
+
+}
+
+.product-container {
+    margin: 15px;
+    padding: 2px 16px;
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
+    background-color: white;
+    height: 350px;
+    width: 250px;
+}
+.product-container2 {
+    margin: 15px;
+    margin-top: 80px;
+    padding: 2px 16px;
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
+    background-color: white;
+    height: 1300px;
+    margin-left: 80px;
+    justify-content: center;
+}
+
+.product-container:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+.product-container img {
+    width: 250px;
+}
+
+.product-container h1, .product-container h2 {
+    margin-bottom: 10px;
+    margin-left: 15px;
+    font-size: 30px;
+}
+
+.button-add {
+    background-color: white;
+    color: black;
+    border: 2px solid #0984e3; /* Green */
+    transition-duration: 0.4s;
+    position: absolute;
+    right: 15px;
+    bottom: 10px;
+}
+.br1{
+    display: none;
+  }
+  .br2{
+    display: none;
+  }
+.button-add:hover {
+    background-color: #0984e3; /* Green */
+    color: white;
+}
