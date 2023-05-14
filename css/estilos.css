@@ -1,0 +1,177 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.wrap{
+	margin: auto;
+	width: 90%;
+	max-width: 1000px;
+}
+
+.wrap p{
+	font-size: 18px;
+}
+
+header{
+	width: 100%;
+	height: 150px;
+
+}
+.contenedor{
+    display: flex;
+	height: 120px;
+
+}
+
+.header-top{
+	width: 100%;
+	background: #0984e3;
+	height: 125px;
+	border-color: black;
+	border: 10px;
+}
+
+.navegacion{
+	width: 90%;
+	max-width: 1000px;
+	padding:12px 0;
+	display: flex;
+	height: 120px;
+}
+
+input[type="search"]{
+	padding: 10px;
+	padding-right: 35px;
+	border: black;
+	border: 10px;
+}
+
+.search{
+	width: 100%;
+	max-width: 1000px;
+	margin: auto;
+	background: #fff;
+	padding:0 10px;
+	padding-bottom: 5px;
+	max-height: 85%;
+	overflow-x: hidden;
+	display: none;
+}
+
+.search-table{
+	width: 80%;
+}
+
+tbody tr td{
+	width: 50%;
+}
+
+
+tbody tr td .a{
+	margin-right: 10px;
+	text-decoration: none;
+	font-size: 18px;
+	color: #ff0000;
+	display: block;
+	width: 100%;
+	height: 100%;
+	padding: 10px 0;
+	padding-left: 2px;
+	border: 2px solid #fff;
+}
+
+tbody tr td:hover{
+	border: 1px solid #000000;
+}
+
+.search::-webkit-scrollbar{ 
+	background:rgba(0,0,0,0);  
+}
+
+.search::-webkit-scrollbar-button{
+ 	background:#C1C1C1;  
+}
+
+.search::-webkit-scrollbar-thumb{ 
+	background:#C1C1C1; 
+}
+
+.dataTables_length,
+.dataTables_filter,
+.dataTables_info,
+.dataTables_paginate {
+	display: none;
+}
+
+.navegacion input::placeholder{
+	color: rgb(0, 0, 0);
+	
+}
+@media (max-width: 768px){
+	.navegacion b i h1{
+		display: none;
+	}
+}
+.ana{
+	display: none;
+}
+.navegacion input{
+	background-color: white;
+	color: black;
+	transition-duration: 0.4s;
+	right: 15px;
+	height: 50px;
+	width: 41%;
+	font-size: 2px 16px;
+	border-radius: 8px;
+	padding: 10px 20px;
+	font-family: 'Nerko One', cursive;
+	font-size: 20px;
+	margin: 30px;
+	-webkit-box-shadow: 0 0.8rem 10rem rgba(0, 0, 0, 0.2);
+			box-shadow: 0 0.8rem 10rem rgba(0, 0, 0, 0.2);
+	}
+.loguito{
+		width: 400px;
+	}
+@media (max-width: 457px){
+
+	.navegacion input{
+		width: 500%;
+		margin: 10px;
+	}
+	.navegacion img{
+		display: none;
+		
+	}
+	.ana{
+		display: flex;
+		font-size: 20px;
+		margin-top: 20px;
+		margin-left: 0%;
+	}
+
+}	
+
+@media (max-width: 470px){
+	.loguito{
+		width: 80%;
+	}
+	#br{
+		display: flex;
+	}
+}	
+
+
+@media (max-width: 640px){
+
+	#br{
+		display: none;
+	}
+}	
+
+
+
+
