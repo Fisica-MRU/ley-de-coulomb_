@@ -7,21 +7,21 @@ function LaTeX(code) {
   }
   let baseDePreguntas = [
     {
-      pregunta: "La fuerza entre dos cargas iguales distanciadas por 1 cm es igual a 90 N. ¿Cuál es la magnitud de estas dos cargas?",
-      imagen: "1.webp",
-      respuesta: "+- 1x10^-6 C",
-      distractores: ["+- 2x10^-5 C", "+- 3x30^-1 C", "+- 2x10^-6 C"],
+      pregunta: "Utilice la ley de Ampère para calcular el campo magnético debido a una corriente constante I en un cable lineal infinito y delgado como se muestra en la Figura 12.15.",
+      imagen: "1.jpg",
+      respuesta: "B= μ0I/2πr.",
+      distractores: ["B= μ0I/3πr.", "B= μ0I/8πr.", "B= μ0I/1πr."],
     },
     {
-      pregunta: "Cuatro cargas se encuentran en las esquinas de un cuadrado respectivamente, en donde los lados del cuadrado tiene una longitud de 0.05 metros. La carga superior izquierda tiene un valor de q, la esquina superior derecha -q, la esquina inferior izquierda 2q y la esquina inferior derecha cuenta con una carga de -2q. Si la magnitud de la carga q es de 1x10-7 Coulomb. ¿ Cuál será la magnitud de la fuerza ejercida sobre la carga inferior izquierda en el sistema?",
-      imagen: "2.webp",
-      respuesta: "0.17N",
-      distractores: ["0.27N", "0.47N", "0.77N"],
+      pregunta: "El radio del cable lineal y largo de la Figura 12.16 es a, y el cable lleva una corriente I subindice 0 que se distribuye uniformemente en su sección transversal. Calcule el campo magnético tanto dentro como fuera del cable.",
+      imagen: "2.jpg",
+      respuesta: "B=μ0I0/2πr (r≥a). ",
+      distractores: ["B=μ0I0/2πr (r=a). ", "B=μ0I0/3πr (r≥a). ", "B=μ0I0/3πr (r=a). "],
     },
     {
-      pregunta: " Dos esferas iguales se encuentran separadas por una longitud de 35 centímetros. ¿Cuántos electrones en exceso estarán presentes en cada esfera si la magnitud de la fuerza de repulsión entre ellas es de 2.20x10-21 N?",
-      imagen: "3.webp",
-      respuesta: "1062 electrones",
-      distractores: ["1050 electrones", "1034 electrones", "1052 electrones"],
+      pregunta: "Utilice la ley de Ampère para evaluar  ∮B⃗ ⋅dl⃗      para las configuraciones y trayectorias actuales en la Figura 12.18.",
+      imagen: "3.jpg",
+      respuesta: "A y  ∮B⃗ ⋅dl⃗ =μ0(9A)=1,13×10–5T⋅m.s",
+      distractores: ["  ∮B⃗ ⋅dl⃗ =μ0(9A)=1,13×10–5T⋅m. y A = 9", "A y  ∮B⃗ ⋅dl⃗ =μ0(6A)=1,13×10–5T⋅m.", "A y  ∮B⃗ ⋅dl⃗ =μ0(9A)=1,23×10–5T⋅m."],
     },
   ];
